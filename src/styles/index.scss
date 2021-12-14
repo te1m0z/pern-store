@@ -1,13 +1,19 @@
 @import '~normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;700&display=swap');
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body, #root {
     min-height: 100vh;
     font-family: 'Readex Pro', sans-serif;
 }
 
 .container {
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 15px;
     height: inherit;

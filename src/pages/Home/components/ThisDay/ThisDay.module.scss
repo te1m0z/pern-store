@@ -24,4 +24,16 @@
         font-weight: 500;
         color: $primary-color;
     }
+
+    & .this__day_name {
+        font-size: 40px;
+        color: $lite-color;
+    }
+}
+
+.bottom__block {
+    & .this__time, & .this__city {
+        color: $base-color;
+        font-size: 25px;
+    }
 }
