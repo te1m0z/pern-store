@@ -18,12 +18,16 @@ export const Header = (props: Props) => {
     const selectStyles = {
         control: (styles: any) => ({
             ...styles,
-            backgroundColor: '#fff',
+            backgroundColor: 0 ? '#4f4f4f' : 'rgba(71, 147, 255, 0.2)',
             width: 190,
             height: '35px',
-            border: '1px dashed #000',
+            border: '1px solid #000',
             borderRadius: '10px',
             zIndex: 30,
+        }),
+        singleValue: (styles: any) => ({
+            ...styles,
+            color: 0 ? '#fff' : '#4f4f4f'
         })
     }
 

@@ -5,7 +5,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
-    background: $lite-background;
+    background-color: var(#{--components-background-default});
     box-shadow: $box-shadow;
     border-radius: 0 0 $border-radius $border-radius;
 }
@@ -13,7 +13,7 @@
 .card {
     display: flex;
     flex-direction: column;
-    background: rgba(149, 193, 243, 0.3);
+    background: var(#{--card-background-default});
     padding: 10px;
     border-radius: 10px;
     width: 150px;
@@ -23,6 +23,7 @@
     & .day {
         margin-bottom: 7px;
         font-size: 18px;
+        color: var(#{--text-color-default});
     }
 
     & .day__info {
@@ -39,6 +40,7 @@
 
     & .temp__day {
         font-size: 18px;
+        color: var(#{--text-color-default});
     }
 
     & .temp__night {
@@ -53,7 +55,7 @@
     }
 
     &:hover {
-        box-shadow: 0 3px 20px rgba(221, 65, 65, 0.3);
+        box-shadow: var(#{--card-shadow-default});
     }
 }
 
@@ -62,11 +64,6 @@
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 20px;
-}
-
-.tab.active {
-    background-color: $primary-color;
-    color: #fff;
 }
 
 .tabs__wrapper {
@@ -79,8 +76,19 @@
     border-radius: 5px;
     padding: 9px 20px;
     margin-right: 15px;
-    background-color: $lite-background;
-    color: $lite-color;
+    background-color: var(#{--components-background-default});
+    color: var(#{--text-color-default});
     font-size: 18px;
     cursor: pointer;
+}
+
+.cancel {
+    margin-right: 0;
+}
+
+.tab {
+    &.active {
+        background: $primary-color;
+        color: #fff;
+    }
 }
