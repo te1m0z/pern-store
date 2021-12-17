@@ -4,11 +4,14 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import './styles/index.scss'
+import { ThemeProvider } from './provider/ThemeProvider';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

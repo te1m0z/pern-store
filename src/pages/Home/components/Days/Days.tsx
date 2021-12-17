@@ -40,7 +40,7 @@ export const Days = (props: Props) => {
             icon_id: 'small_rain',
             temp_day: '+13',
             temp_night: '+7',
-            info: ''
+            info: 'Небольшой дождь'
         },
         {
             day: 'Чт',
@@ -56,7 +56,12 @@ export const Days = (props: Props) => {
             <Tabs />
             <div className={s.days}>
                 {
-                    days.map((day: Day) => <Card item={day} />)
+                    days.map((day: Day) => (
+                        <Card
+                            key={day.day_info}
+                            item={day}
+                        />
+                    ))
                 }
             </div>
         </>

@@ -4,7 +4,7 @@
     padding: 20px;
     max-width: 400px;
     background-color: var(#{--components-background-default});
-    box-shadow: $box-shadow;
+    box-shadow: var(#{--card-shadow-default});
     border-radius: $border-radius;
 }
 
