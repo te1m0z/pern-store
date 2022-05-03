@@ -1,3 +1,4 @@
-/node_modules
-package-lock.json
-.env
+/**/node_modules/
+/**/package-lock.json
+/**/.env
+/**/*.{pdf,mp4,zip,rar,mp3}
